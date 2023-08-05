@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YTMP3 - YouTube to Mp3 Music Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/ytfavicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <a href="index.html" class="logo">YTMP3</a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">How-to</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sources</a>
+                </li>
+                <div class="active-bar"></div>
+                <label id="darkmode"></label>
+            </ul>
+            
+        </nav>
+    </header>
+
+
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var dark = document.getElementById('darkmode');
+        dark.addEventListener('click', function(){
+            dark.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+</body>
+</html>
